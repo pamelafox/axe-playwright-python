@@ -16,7 +16,6 @@ You will need the following prerequisites in order to use axe-core-python:
     - [playwright](https://github.com/microsoft/playwright-python) >= 1.25.0
 
 
-
 ## Installation
 
 ```console
@@ -50,7 +49,6 @@ python -m playwright install
 ```
 
 More about [Playwright installation](https://playwright.bootcss.com/python/docs/installation).
-
 
 ## Usage
 
