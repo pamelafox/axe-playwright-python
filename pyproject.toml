@@ -1,15 +1,31 @@
 [tool.poetry]
 name = "axe-core-python"
 version = "0.1.0"
-description = ""
+description = "Automated web accessibility testing using axe-core engine."
 authors = ["Ruslan Iskov <ruslan.rv.ua@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/ruslan-rv-ua/axe-core-python"
+documentation = "https://github.com/ruslan-rv-ua/axe-core-python"
+repository = "https://github.com/ruslan-rv-ua/axe-core-python"
+keywords = ["accessibility", "axe", "axe-core", "selenium", "playwright"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Adaptive Technologies",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1"
-black = {version = "^22.6.0", allow-prereleases = true}
+black = { version = "^22.6.0", allow-prereleases = true }
 selenium = "^4.4.3"
 playwright = "^1.25.2"
 
