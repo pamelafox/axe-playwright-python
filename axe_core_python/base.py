@@ -11,6 +11,7 @@ class AxeBase(ABC):
     def __init__(self, axe_script: str = AXE_SCRIPT) -> None:
         self.axe_script = axe_script
 
+    @staticmethod
     def _format_script_args(
         context: str | list | dict | None = None, options: dict | None = None
     ) -> str:
