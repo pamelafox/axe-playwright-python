@@ -1,4 +1,4 @@
-from base import AxeBase
+from .base import AxeBase
 
 
 class Axe(AxeBase):
