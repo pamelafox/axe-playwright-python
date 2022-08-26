@@ -17,6 +17,8 @@ class Axe(AxeBase):
             "var seleniumCallback = arguments[arguments.length - 1];"
             "axe.run(%s).then(results => seleniumCallback(results))"
         )
+        # command_template = "let result; await axe.run(%s).then((r)=> {result=r}); return result;"
         command = command_template % args_str
         response = webdriver.execute_async_script(command)
+        # response = webdriver.execute_script(command)
         return response
