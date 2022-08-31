@@ -6,8 +6,8 @@ authors = ["Ruslan Iskov <ruslan.rv.ua@gmail.com>"]
 readme = "README.md"
 license = "MIT"
 homepage = "https://github.com/ruslan-rv-ua/axe-core-python"
-documentation = "https://github.com/ruslan-rv-ua/axe-core-python"
 repository = "https://github.com/ruslan-rv-ua/axe-core-python"
+documentation = "https://ruslan-rv-ua.github.io/axe-core-python/"
 keywords = ["accessibility", "axe", "axe-core", "selenium", "playwright"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",

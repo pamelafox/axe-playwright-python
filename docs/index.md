@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# axe-core-python
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Requirements
 
-## Commands
+You will need the following prerequisites in order to use axe-core-python:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- Python >= 3.10
+- [selenium](https://www.selenium.dev) >= 4.4.0 
+or [playwright](https://github.com/microsoft/playwright-python) >= 1.25.0

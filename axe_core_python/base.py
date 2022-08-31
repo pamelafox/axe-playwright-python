@@ -8,7 +8,13 @@ AXE_SCRIPT = AXE_FILE_PATH.read_text()
 
 
 class AxeBase(ABC):
+    """Abstract base class.
+    """
     def __init__(self, axe_script: str = AXE_SCRIPT) -> None:
+        """
+        Args:
+            axe_script (str, optional): `axe.js` or `axe.min.js` javascript. Defaults to AXE_SCRIPT.
+        """
         self.axe_script = axe_script
 
     @staticmethod

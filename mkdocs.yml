@@ -1,1 +1,51 @@
-site_name: My Docs
+site_name: axe-core-python
+site_description: "axe-core-python documentation"
+site_author: "Ruslan Iskov"
+
+# Repository
+repo_name: "axe-core-python"
+repo_url: "https://github.com/ruslan-rv-ua/axe-core-python"
+
+# Copyright
+copyright: "Copyright &copy; Ruslan Iskov"
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [axe_core_python]
+          options:
+            show_source: false
+            heading_level: 2
+            show_root_heading: true
+            show_root_toc_entry: false
+            # docstring_section_style: list
+            merge_init_into_class: true
+            # show_if_no_docstring: true
+
+# Customization
+extra:
+  social:
+  #  - type: 'github'
+  #    link: 'https://github.com/ruslan-rv-ua/axe-core-python'
+  #  - type: 'twitter'
+  #    link: 'https://twitter.com/squidfunk'
+  #  - type: 'linkedin'
+  #    link: 'https://linkedin.com/in/squidfunk'
+  search:
+    language: "en"
+
+nav:
+  - index.md
+  - installation.md
+  - usage.md
+  - API: api.md
+
+# Google Analytics
+# google_analytics:
+#  - 'UA-XXXXXXXX-X'
+#  - 'auto'
