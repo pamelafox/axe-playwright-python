@@ -13,7 +13,8 @@ class AxeBase(ABC):
     def __init__(self, axe_script: str = AXE_SCRIPT) -> None:
         """
         Args:
-            axe_script (str, optional): `axe.js` or `axe.min.js` javascript. Defaults to AXE_SCRIPT.
+            axe_script (str, optional): `axe.js` or `axe.min.js` javascript.
+                Defaults to AXE_SCRIPT.
         """
         self.axe_script = axe_script
 
@@ -39,5 +40,13 @@ class AxeBase(ABC):
 
     @classmethod
     def from_file(cls, axe_min_js_path: str | Path) -> "AxeBase":
+        """Load axe script from file and create Axe instance.
+
+        Args:
+            axe_min_js_path (str | Path): path to `axe.js` or `axe.min.js`
+
+        Returns:
+            AxeBase: Axe instance
+        """
         axe_script = Path(axe_min_js_path).read_text(encoding="UTF-8")
         return cls(axe_script=axe_script)

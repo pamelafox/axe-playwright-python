@@ -8,15 +8,18 @@ class Axe(AxeBase):
         context: str | list | dict | None = None,
         options: dict | None = None,
     ) -> dict:
-        """Run axe accessibility checks against webdriver. # NOQA
+        """Run axe accessibility checks against webdriver.
 
 
         Args:
             webdriver (): selenium webdriver
-            context (str | list | dict | None, optional): context. Defaults to None.
-            options (dict | None, optional): options. Defaults to None.
+            context (str | list | dict | None, optional): context.
+                Defaults to None.
+            options (dict | None, optional): options.
+                Defaults to None.
 
-        For more information on `context` and `options`, view the [axe-core documentation]().
+        For more information on `context` and `options`, 
+            view the [axe-core documentation]().
 
         Returns:
             dict: test result

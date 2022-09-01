@@ -8,6 +8,22 @@ class Axe(AxeBase):
         context: str | list | dict | None = None,
         options: dict | None = None,
     ) -> dict:
+        """Run axe accessibility checks against webpage.
+
+        Args:
+            page (playwright.sync_api._generated.Page): Page object
+            context (str | list | dict | None, optional): context.
+                Defaults to None.
+            options (dict | None, optional): options.
+                Defaults to None.
+
+        For more information on `context` and `options`, 
+            view the [axe-core documentation]().
+
+        Returns:
+            dict: test result
+        """
+
         # inject `Axe` into document
         page.evaluate(self.axe_script)
 
