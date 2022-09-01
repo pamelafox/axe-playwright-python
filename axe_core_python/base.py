@@ -38,6 +38,6 @@ class AxeBase(ABC):
         pass
 
     @classmethod
-    def load_script(cls, axe_script_path: str | Path) -> "AxeBase":
-        axe_script = Path(axe_script_path).read_text(encoding="UTF-8")
+    def from_file(cls, axe_min_js_path: str | Path) -> "AxeBase":
+        axe_script = Path(axe_min_js_path).read_text(encoding="UTF-8")
         return cls(axe_script=axe_script)
