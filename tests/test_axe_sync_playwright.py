@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import pytest
-from axe_core_python.sync_plalywright import Axe
+from axe_core_python.sync_playwright import Axe
 from playwright.sync_api import sync_playwright
 
 TEST_FILE = "test_page.html"
