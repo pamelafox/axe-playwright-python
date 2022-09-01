@@ -1,6 +1,9 @@
 # axe-core-python
 
-[![Latest Version](https://pypip.in/version/axe-core-python>/badge.svg)](https://pypi.python.org/pypi/axe-core-python/)
+![PyPI](https://img.shields.io/pypi/v/axe-core-python) 
+![PyPI - License](https://img.shields.io/pypi/l/axe-core-python) 
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/axe-core-python)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/axe-core-python) 
 
 
 Automated web accessibility testing using [axe-core](https://github.com/dequelabs/axe-core) engine.
