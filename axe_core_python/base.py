@@ -8,8 +8,8 @@ AXE_SCRIPT = AXE_FILE_PATH.read_text()
 
 
 class AxeBase(ABC):
-    """Abstract base class.
-    """
+    """Abstract base class."""
+
     def __init__(self, axe_script: str = AXE_SCRIPT) -> None:
         """
         Args:
@@ -34,11 +34,7 @@ class AxeBase(ABC):
         return args
 
     @abstractmethod
-    def run(
-        self,
-        context: str | list | dict | None = None,
-        options: dict | None = None,
-    ):
+    def run(self):
         pass
 
     @classmethod
