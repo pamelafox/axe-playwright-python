@@ -2,7 +2,7 @@
 
 TODO:
 
-For `context` and `options` paremeters see [axe-core API documentation](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#api-name-axerun).
+<!-- For `context` and `options` paremeters see [axe-core API documentation](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#api-name-axerun).
 
 Remote testing:
 
@@ -65,4 +65,4 @@ async def test_color_contrast(url: str) -> dict:
         await browser.close()
         return result['violations']
 ```
-https://camo.githubusercontent.com/41415ee92389d5dd1a36783f3f230a67aa8a9cd64a36f324719bf7011e8f0513/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f6178652d73656c656e69756d2d707974686f6e2e737667
+https://camo.githubusercontent.com/41415ee92389d5dd1a36783f3f230a67aa8a9cd64a36f324719bf7011e8f0513/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f6178652d73656c656e69756d2d707974686f6e2e737667 -->

@@ -11,6 +11,12 @@ copyright: "Copyright &copy; Ruslan Iskov"
 
 theme:
   name: "material"
+  language: "en"
+  palette:
+    scheme: slate
+    # primary: 'black'
+    accent: 'white'
+
 
 plugins:
   - mkdocstrings:
@@ -23,7 +29,7 @@ plugins:
             heading_level: 2
             show_root_heading: true
             show_root_toc_entry: false
-            # docstring_section_style: list
+            docstring_section_style: list
             merge_init_into_class: true
             # show_if_no_docstring: true
 
@@ -40,9 +46,8 @@ extra:
     language: "en"
 
 nav:
-  - index.md
-  - installation.md
-  - usage.md
+  - About: index.md
+  - Usage: usage.md
   - API: api.md
 
 # Google Analytics

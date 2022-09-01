@@ -8,10 +8,6 @@
 
 Automated web accessibility testing using [axe-core](https://github.com/dequelabs/axe-core) engine.
 
-## Features
-
-TODO: tell them why this library is so cool.
-
 ## Documentation
 
 - [Full documentation](https://ruslan-rv-ua.github.io/axe-core-python/).
@@ -47,4 +43,4 @@ violations = result['violations']
 print(f"{len(violations)} violations found.")
 ```
 
-More examples and API available in [documentation](https://ruslan-rv-ua.github.io/axe-core-python/).
+For more examples see [documentation](https://ruslan-rv-ua.github.io/axe-core-python/).
