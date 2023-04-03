@@ -44,3 +44,19 @@ print(f"{len(violations)} violations found.")
 ```
 
 For more examples see [documentation](https://ruslan-rv-ua.github.io/axe-core-python/).
+
+## Development
+
+Install [poetry](https://python-poetry.org/).
+
+Install the project dependencies:
+
+```
+poetry install
+```
+
+Run the tests:
+
+```
+poetry run pytest
+```
