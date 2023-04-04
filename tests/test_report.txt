@@ -6,62 +6,146 @@ color-contrast - Ensures the contrast between foreground and background colors m
     Tags: ['cat.color', 'wcag2aa', 'wcag143']
     Elements Affected:
     
-	1) Target: li:nth-child(1) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	2) Target: li:nth-child(2) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	3) Target: li:nth-child(3) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	4) Target: li:nth-child(4) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	5) Target: li:nth-child(5) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	6) Target: li:nth-child(6) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	7) Target: li:nth-child(7) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	8) Target: li:nth-child(8) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	9) Target: li:nth-child(9) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	10) Target: li:nth-child(10) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	11) Target: li:nth-child(11) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	12) Target: li:nth-child(12) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	13) Target: li:nth-child(13) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	14) Target: li:nth-child(14) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	15) Target: li:nth-child(15) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	16) Target: li:nth-child(16) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	17) Target: li:nth-child(17) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	18) Target: li:nth-child(18) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	19) Target: li:nth-child(19) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	20) Target: li:nth-child(20) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	21) Target: li:nth-child(21) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	22) Target: li:nth-child(22) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	23) Target: li:nth-child(23) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	24) Target: li:nth-child(24) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	25) Target: li:nth-child(25) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	26) Target: li:nth-child(26) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	27) Target: li:nth-child(27) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
-	28) Target: li:nth-child(28) > .metadata
-		Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	1)	Target: li:nth-child(1) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44761.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	2)	Target: li:nth-child(2) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44757.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	3)	Target: li:nth-child(3) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44749.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	4)	Target: li:nth-child(4) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44726.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	5)	Target: li:nth-child(5) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44719.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	6)	Target: li:nth-child(6) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44705.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	7)	Target: li:nth-child(7) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44640.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	8)	Target: li:nth-child(8) > .metadata
+		Snippet: <div class="metadata">   Last updated around 43165.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	9)	Target: li:nth-child(9) > .metadata
+		Snippet: <div class="metadata">   Last updated around 43124.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	10)	Target: li:nth-child(10) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42592.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	11)	Target: li:nth-child(11) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42430.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	12)	Target: li:nth-child(12) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42363.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	13)	Target: li:nth-child(13) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42283.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	14)	Target: li:nth-child(14) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42248.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	15)	Target: li:nth-child(15) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42044.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	16)	Target: li:nth-child(16) > .metadata
+		Snippet: <div class="metadata">   Last updated around 41061.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	17)	Target: li:nth-child(17) > .metadata
+		Snippet: <div class="metadata">   Last updated around 41049.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	18)	Target: li:nth-child(18) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40675.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	19)	Target: li:nth-child(19) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40621.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	20)	Target: li:nth-child(20) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40599.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	21)	Target: li:nth-child(21) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40588.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	22)	Target: li:nth-child(22) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40493.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	23)	Target: li:nth-child(23) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40424.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	24)	Target: li:nth-child(24) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40393.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	25)	Target: li:nth-child(25) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40153.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	26)	Target: li:nth-child(26) > .metadata
+		Snippet: <div class="metadata">   Last updated around 39653.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	27)	Target: li:nth-child(27) > .metadata
+		Snippet: <div class="metadata">   Last updated around 39106.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	28)	Target: li:nth-child(28) > .metadata
+		Snippet: <div class="metadata">   Last updated around 39072.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
 Rule Violated:
 image-alt - Ensures <img> elements have alternate text or a role of none or presentation
     URL: https://dequeuniversity.com/rules/axe/4.4/image-alt?application=axeAPI
@@ -69,279 +153,417 @@ image-alt - Ensures <img> elements have alternate text or a role of none or pres
     Tags: ['cat.text-alternatives', 'wcag2a', 'wcag111', 'section508', 'section508.22.a', 'ACT']
     Elements Affected:
     
-	1) Target: li:nth-child(1) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	2) Target: li:nth-child(1) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	3) Target: li:nth-child(2) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	4) Target: li:nth-child(2) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	5) Target: li:nth-child(3) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	6) Target: li:nth-child(3) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	7) Target: li:nth-child(4) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	8) Target: li:nth-child(4) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	9) Target: li:nth-child(5) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	10) Target: li:nth-child(5) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	11) Target: li:nth-child(6) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	12) Target: li:nth-child(6) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	13) Target: li:nth-child(7) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	14) Target: li:nth-child(7) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	15) Target: li:nth-child(8) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	16) Target: li:nth-child(9) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	17) Target: li:nth-child(10) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	18) Target: li:nth-child(10) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	19) Target: li:nth-child(11) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	20) Target: li:nth-child(11) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	21) Target: li:nth-child(12) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	22) Target: li:nth-child(13) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	23) Target: li:nth-child(14) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	24) Target: li:nth-child(15) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	25) Target: li:nth-child(15) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	26) Target: li:nth-child(16) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	27) Target: li:nth-child(17) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	28) Target: li:nth-child(17) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	29) Target: li:nth-child(19) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	30) Target: li:nth-child(20) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	31) Target: li:nth-child(21) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	32) Target: li:nth-child(21) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	33) Target: li:nth-child(22) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	34) Target: li:nth-child(22) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	35) Target: li:nth-child(23) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	36) Target: li:nth-child(23) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	37) Target: li:nth-child(24) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	38) Target: li:nth-child(24) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	39) Target: li:nth-child(25) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	40) Target: li:nth-child(25) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	41) Target: li:nth-child(26) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	42) Target: li:nth-child(26) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	43) Target: li:nth-child(27) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	44) Target: li:nth-child(27) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	45) Target: li:nth-child(28) > .thumbnail
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
-	46) Target: li:nth-child(28) > .links > a > img[src$="source_icon.png"]
-		Element does not have an alt attribute
-		aria-label attribute does not exist or is empty
-		aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-		Element has no title attribute
-		Element's default semantics were not overridden with role="none" or role="presentation"
+
+	1)	Target: li:nth-child(1) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_translationtelephone.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	2)	Target: li:nth-child(1) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	3)	Target: li:nth-child(2) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_quizcards.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	4)	Target: li:nth-child(2) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	5)	Target: li:nth-child(3) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_fontpreviewer.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	6)	Target: li:nth-child(3) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	7)	Target: li:nth-child(4) > .thumbnail
+		Snippet: <img class="thumbnail" src="https://i.imgur.com/FrhRJ3k.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	8)	Target: li:nth-child(4) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	9)	Target: li:nth-child(5) > .thumbnail
+		Snippet: <img class="thumbnail" src="https://lh3.googleusercontent.com/VPk9z7RidTMZpXr_KdnPbkwXT_PTd3o_8-1lZsfnwRO4dpHVyyAhkzAUn1yya-mr6FdMfduFbf81hR3AMqBHwQX-IQ=w640-h400-e365-rj-sc0x00ffffff">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	10)	Target: li:nth-child(5) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	11)	Target: li:nth-child(6) > .thumbnail
+		Snippet: <img class="thumbnail" src="https://i.imgur.com/NbEhG5T.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	12)	Target: li:nth-child(6) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	13)	Target: li:nth-child(7) > .thumbnail
+		Snippet: <img class="thumbnail" src="https://pbs.twimg.com/media/FTLbZhdVUAAzAsn?format=jpg&amp;name=medium">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	14)	Target: li:nth-child(7) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	15)	Target: li:nth-child(8) > .thumbnail
+		Snippet: <img class="thumbnail" src="https://cdn-images-1.medium.com/max/1760/1*8kaf4wUuZaoi-ParuD-74Q.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	16)	Target: li:nth-child(9) > .thumbnail
+		Snippet: <img class="thumbnail" src="https://i.ytimg.com/vi/P1i1oNftry0/1.jpg?time=1516837631233">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	17)	Target: li:nth-child(10) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://projecticebreak.com/images/illustration_organizer.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	18)	Target: li:nth-child(10) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	19)	Target: li:nth-child(11) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_teachingmaterials.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	20)	Target: li:nth-child(11) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	21)	Target: li:nth-child(12) > .thumbnail
+		Snippet: <img class="thumbnail" src="https://images-na.ssl-images-amazon.com/images/I/51bkLkVzUwL._SY419_BO1,204,203,200_.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	22)	Target: li:nth-child(13) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://1.bp.blogspot.com/-WG2Q0425hqc/VqGkMILQ7mI/AAAAAAAAKIk/a6MztqkAPSw/s320/diyarthistory_contemporary.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	23)	Target: li:nth-child(14) > .thumbnail
+		Snippet: <img class="thumbnail" src="https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_240,w_320/v1470163768/hqd45fft6eren6jwg41u.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	24)	Target: li:nth-child(15) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_handbook.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	25)	Target: li:nth-child(15) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	26)	Target: li:nth-child(16) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_eatdifferent.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	27)	Target: li:nth-child(17) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_5lide.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	28)	Target: li:nth-child(17) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	29)	Target: li:nth-child(19) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	30)	Target: li:nth-child(20) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	31)	Target: li:nth-child(21) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_ragetube.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	32)	Target: li:nth-child(21) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	33)	Target: li:nth-child(22) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_montagemaker.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	34)	Target: li:nth-child(22) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	35)	Target: li:nth-child(23) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_europopped.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	36)	Target: li:nth-child(23) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	37)	Target: li:nth-child(24) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_flashcards.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	38)	Target: li:nth-child(24) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	39)	Target: li:nth-child(25) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_spreadsheetsconverter.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	40)	Target: li:nth-child(25) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	41)	Target: li:nth-child(26) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_photomunchers.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	42)	Target: li:nth-child(26) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	43)	Target: li:nth-child(27) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_profanegame.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	44)	Target: li:nth-child(27) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	45)	Target: li:nth-child(28) > .thumbnail
+		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_wordhunter.jpg">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"
+
+	46)	Target: li:nth-child(28) > .links > a > img[src$="source_icon.png"]
+		Snippet: <img src="/static/source_icon.png">
+		Messages:
+		* Element does not have an alt attribute
+		* aria-label attribute does not exist or is empty
+		* aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+		* Element has no title attribute
+		* Element's default semantics were not overridden with role="none" or role="presentation"

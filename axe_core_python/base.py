@@ -55,13 +55,14 @@ class AxeBase(ABC):
         tmpl_f.close()
         for violation in violations:
             nodes_str = ""
-            i = 1
-            for node in violation["nodes"]:
-                for target in node["target"]:
-                    nodes_str += f"\n\t{i}) Target: {target}"
-                    i += 1
+            for num, node in enumerate(violation["nodes"], start=1):
+                targets = ', '.join(node["target"])
+                nodes_str += f"\n\n\t{num})\tTarget: {targets}"
+                snippet = node.get('html').replace('\n', '')
+                nodes_str += f"\n\t\tSnippet: {snippet}"
+                nodes_str += "\n\t\tMessages:"
                 for item in node.get("all", []) + node.get("any", []) + node.get("none", []):
-                    nodes_str += "\n\t\t" + item["message"]
+                    nodes_str += "\n\t\t* " + item["message"]
             report_str += template.substitute(violation, elements=nodes_str)
         return report_str
 
