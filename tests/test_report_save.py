@@ -41,3 +41,13 @@ def test_save_results_with_pathlib(test_results_json):
     Axe.save_results(test_results_json, Path("results3.json"))
     assert Path("results3.json").is_file()
     os.remove("results3.json")
+
+def test_save_results_violations_only(test_results_json):
+    file_path = Path("results_violations.json")
+    Axe.save_results(test_results_json, file_path, violations_only=True)
+    assert file_path.is_file()
+    results_json = open(file_path).read()
+    assert "incomplete" not in results_json
+    assert "passes" not in results_json
+    assert "inapplicable" not in results_json
+    os.remove(file_path)

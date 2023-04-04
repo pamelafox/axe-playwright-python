@@ -66,11 +66,16 @@ class AxeBase(ABC):
         return report_str
 
     @staticmethod
-    def save_results(results: dict, file_path: str | Path | None = None) -> None:
+    def save_results(results: dict, file_path: str | Path | None = None,
+                     violations_only: bool = False) -> None:
         """Save results to file.
         @param results: Results from Axe analysis
         @param file_path: File path for saving results file
         """
+        if violations_only:
+            del results["inapplicable"]
+            del results["incomplete"]
+            del results["passes"]
         if file_path is None:
             cwd = Path.cwd()
             file_path = cwd / "results.json"
