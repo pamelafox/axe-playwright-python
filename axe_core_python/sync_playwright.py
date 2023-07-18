@@ -1,4 +1,4 @@
-from .base import AxeBase
+from .base import AxeBase, AxeResults
 
 
 class Axe(AxeBase):
@@ -7,7 +7,7 @@ class Axe(AxeBase):
         page,
         context: str | list | dict | None = None,
         options: dict | None = None,
-    ) -> dict:
+    ) -> AxeResults:
         """Run axe accessibility checks against webpage.
 
         Args:
@@ -32,4 +32,4 @@ class Axe(AxeBase):
         command_template = "axe.run(%s).then(results => {return results;})"
         command = command_template % args_str
         response = page.evaluate(command)
-        return response
+        return AxeResults(response)

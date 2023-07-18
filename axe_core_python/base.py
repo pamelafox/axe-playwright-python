@@ -42,13 +42,42 @@ class AxeBase(ABC):
     def run(self):
         pass
 
-    @staticmethod
-    def report_violations(results: dict) -> str:
+    @classmethod
+    def from_file(cls, axe_min_js_path: str | Path) -> "AxeBase":
+        """Load axe script from file and create Axe instance.
+
+        Args:
+            axe_min_js_path (str | Path): path to `axe.js` or `axe.min.js`
+
+        Returns:
+            AxeBase: Axe instance
+        """
+        axe_script = Path(axe_min_js_path).read_text(encoding="UTF-8")
+        return cls(axe_script=axe_script)
+
+
+class AxeResults():
+    
+    def __init__(self, response: dict):
+        self.response = response
+
+    @property
+    def violations_snapshot(self):
+        """
+        Return snapshot of violations, for use in snapshot testing
+        """
+        snapshot_lines = []
+        for v in self.response['violations']:
+            snapshot_lines.append(f"{v['id']} ({v['impact']}) : {len(v['nodes'])}")
+        return '\n'.join(snapshot_lines)
+
+    @property
+    def violations_report(self) -> str:
         """
         Return readable report of accessibility violations found.
         https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#result-arrays
         """
-        violations = results["violations"]
+        violations = self.response["violations"]
         report_str = f"Found {len(violations)} accessibility violations:\n"
         tmpl_f = open(os.path.join(os.path.dirname(__file__), "violations.txt"))
         template = Template(tmpl_f.read())
@@ -65,32 +94,22 @@ class AxeBase(ABC):
                     nodes_str += "\n\t\t* " + item["message"]
             report_str += template.substitute(violation, elements=nodes_str)
         return report_str
-
-    @staticmethod
-    def save_results(results: dict, file_path: str | Path | None = None,
+    
+    def save_to_file(self, file_path: str | Path | None = None,
                      violations_only: bool = False) -> None:
         """Save results to file.
         @param results: Results from Axe analysis
         @param file_path: File path for saving results file
         """
+        # create a copy of the dict
+        response = self.response.copy()
         if violations_only:
-            del results["inapplicable"]
-            del results["incomplete"]
-            del results["passes"]
+            del response["inapplicable"]
+            del response["incomplete"]
+            del response["passes"]
         if file_path is None:
             cwd = Path.cwd()
             file_path = cwd / "results.json"
-        Path(file_path).write_text(json.dumps(results, indent=4))
+        Path(file_path).write_text(json.dumps(response, indent=4))
 
-    @classmethod
-    def from_file(cls, axe_min_js_path: str | Path) -> "AxeBase":
-        """Load axe script from file and create Axe instance.
 
-        Args:
-            axe_min_js_path (str | Path): path to `axe.js` or `axe.min.js`
-
-        Returns:
-            AxeBase: Axe instance
-        """
-        axe_script = Path(axe_min_js_path).read_text(encoding="UTF-8")
-        return cls(axe_script=axe_script)
