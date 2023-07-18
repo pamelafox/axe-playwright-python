@@ -57,9 +57,13 @@ class AxeBase(ABC):
 
 
 class AxeResults():
-    
+
     def __init__(self, response: dict):
         self.response = response
+
+    @property
+    def violations_count(self):
+        return len(self.response['violations'])
 
     @property
     def violations_snapshot(self):

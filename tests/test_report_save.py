@@ -58,3 +58,8 @@ def test_save_results_violations_only(test_results_json):
     assert "passes" not in results_json
     assert "inapplicable" not in results_json
     os.remove(file_path)
+
+
+def test_violations_count(test_results_json):
+    results = AxeResults(test_results_json)
+    assert results.violations_count == 9

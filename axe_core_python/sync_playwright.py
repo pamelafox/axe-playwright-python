@@ -1,12 +1,13 @@
 from .base import AxeBase, AxeResults
 
+DEFAULT_OPTIONS = {"resultTypes": ["violations"]}
 
 class Axe(AxeBase):
     def run(
         self,
         page,
         context: str | list | dict | None = None,
-        options: dict | None = None,
+        options: dict | None = DEFAULT_OPTIONS,
     ) -> AxeResults:
         """Run axe accessibility checks against webpage.
 
