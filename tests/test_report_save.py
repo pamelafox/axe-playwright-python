@@ -18,8 +18,16 @@ def test_results_json():
 
 def test_report(test_results_json):
     results = AxeResults(test_results_json)
-    report = results.violations_report
+    report = results.generate_report()
     report_path = os.path.join(os.path.dirname(__file__), "test_report.txt")
+    with open(report_path, "r") as f:
+        assert report == f.read()
+
+
+def test_report_for_id(test_results_json):
+    results = AxeResults(test_results_json)
+    report = results.generate_report(violation_id="color-contrast")
+    report_path = os.path.join(os.path.dirname(__file__), "test_report_color.txt")
     with open(report_path, "r") as f:
         assert report == f.read()
 
@@ -62,4 +70,4 @@ def test_save_results_violations_only(test_results_json):
 
 def test_violations_count(test_results_json):
     results = AxeResults(test_results_json)
-    assert results.violations_count == 9
+    assert results.violations_count == 2

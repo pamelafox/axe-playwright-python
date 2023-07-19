@@ -65,8 +65,7 @@ class AxeResults():
     def violations_count(self):
         return len(self.response['violations'])
 
-    @property
-    def violations_snapshot(self):
+    def generate_snapshot(self):
         """
         Return snapshot of violations, for use in snapshot testing
         """
@@ -75,28 +74,34 @@ class AxeResults():
             snapshot_lines.append(f"{v['id']} ({v['impact']}) : {len(v['nodes'])}")
         return '\n'.join(snapshot_lines)
 
-    @property
-    def violations_report(self) -> str:
+    def __violation_report(self, violation: dict, template: Template) -> str:
+        nodes_str = ""
+        for num, node in enumerate(violation["nodes"], start=1):
+            targets = ', '.join(node["target"])
+            nodes_str += f"\n\n\t{num})\tTarget: {targets}"
+            snippet = node.get('html').replace('\n', '')
+            nodes_str += f"\n\t\tSnippet: {snippet}"
+            nodes_str += "\n\t\tMessages:"
+            for item in node.get("all", []) + node.get("any", []) + node.get("none", []):
+                nodes_str += "\n\t\t* " + item["message"]
+        return template.substitute(violation, elements=nodes_str)
+    
+    def generate_report(self, violation_id: str | None = None) -> str:
         """
         Return readable report of accessibility violations found.
         https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#result-arrays
         """
         violations = self.response["violations"]
-        report_str = f"Found {len(violations)} accessibility violations:\n"
+        report_str = ""
+        if violation_id is None:
+            report_str += f"Found {len(violations)} accessibility violations:\n"
         tmpl_f = open(os.path.join(os.path.dirname(__file__), "violations.txt"))
         template = Template(tmpl_f.read())
         tmpl_f.close()
         for violation in violations:
-            nodes_str = ""
-            for num, node in enumerate(violation["nodes"], start=1):
-                targets = ', '.join(node["target"])
-                nodes_str += f"\n\n\t{num})\tTarget: {targets}"
-                snippet = node.get('html').replace('\n', '')
-                nodes_str += f"\n\t\tSnippet: {snippet}"
-                nodes_str += "\n\t\tMessages:"
-                for item in node.get("all", []) + node.get("any", []) + node.get("none", []):
-                    nodes_str += "\n\t\t* " + item["message"]
-            report_str += template.substitute(violation, elements=nodes_str)
+            if violation_id is not None and violation_id != violation["id"]:
+                continue
+            report_str += self.__violation_report(violation, template)
         return report_str
     
     def save_to_file(self, file_path: str | Path | None = None,
