@@ -36,3 +36,17 @@ Publish to PyPi:
 ```
 poetry publish
 ```
+
+## Documentation
+
+Build locally:
+
+```
+mkdocs serve
+```
+
+Deploy to GitHub Pages:
+
+```
+mkdocs gh-deploy
+```
