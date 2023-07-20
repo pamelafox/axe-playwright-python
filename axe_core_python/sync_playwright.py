@@ -1,13 +1,16 @@
-from .base import AxeBase
+import logging
 
+from .base import AxeBase, AxeResults
+
+DEFAULT_OPTIONS = {"resultTypes": ["violations"]}
 
 class Axe(AxeBase):
     def run(
         self,
         page,
         context: str | list | dict | None = None,
-        options: dict | None = None,
-    ) -> dict:
+        options: dict | None = DEFAULT_OPTIONS,
+    ) -> AxeResults:
         """Run axe accessibility checks against webpage.
 
         Args:
@@ -32,4 +35,5 @@ class Axe(AxeBase):
         command_template = "axe.run(%s).then(results => {return results;})"
         command = command_template % args_str
         response = page.evaluate(command)
-        return response
+        results = AxeResults(response)
+        return results

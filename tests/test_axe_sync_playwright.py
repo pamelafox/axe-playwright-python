@@ -68,5 +68,5 @@ def test_run_axe_sample_page_webkit(webkit_page):
 def _perform_axe_run(page):
     page.goto("file://" + str(TEST_FILE_PATH))
     axe = Axe()
-    data = axe.run(page=page)
-    return data
+    results = axe.run(page=page)
+    return results.response

@@ -1,0 +1,147 @@
+Rule Violated:
+color-contrast - Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds
+    URL: https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI
+    Impact Level: serious
+    Tags: ['cat.color', 'wcag2aa', 'wcag143']
+    Elements Affected:
+    
+
+	1)	Target: li:nth-child(1) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44761.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	2)	Target: li:nth-child(2) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44757.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	3)	Target: li:nth-child(3) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44749.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	4)	Target: li:nth-child(4) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44726.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	5)	Target: li:nth-child(5) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44719.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	6)	Target: li:nth-child(6) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44705.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	7)	Target: li:nth-child(7) > .metadata
+		Snippet: <div class="metadata">   Last updated around 44640.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	8)	Target: li:nth-child(8) > .metadata
+		Snippet: <div class="metadata">   Last updated around 43165.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	9)	Target: li:nth-child(9) > .metadata
+		Snippet: <div class="metadata">   Last updated around 43124.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	10)	Target: li:nth-child(10) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42592.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	11)	Target: li:nth-child(11) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42430.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	12)	Target: li:nth-child(12) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42363.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	13)	Target: li:nth-child(13) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42283.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	14)	Target: li:nth-child(14) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42248.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	15)	Target: li:nth-child(15) > .metadata
+		Snippet: <div class="metadata">   Last updated around 42044.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	16)	Target: li:nth-child(16) > .metadata
+		Snippet: <div class="metadata">   Last updated around 41061.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	17)	Target: li:nth-child(17) > .metadata
+		Snippet: <div class="metadata">   Last updated around 41049.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	18)	Target: li:nth-child(18) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40675.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	19)	Target: li:nth-child(19) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40621.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	20)	Target: li:nth-child(20) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40599.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	21)	Target: li:nth-child(21) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40588.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	22)	Target: li:nth-child(22) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40493.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	23)	Target: li:nth-child(23) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40424.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	24)	Target: li:nth-child(24) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40393.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	25)	Target: li:nth-child(25) > .metadata
+		Snippet: <div class="metadata">   Last updated around 40153.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	26)	Target: li:nth-child(26) > .metadata
+		Snippet: <div class="metadata">   Last updated around 39653.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	27)	Target: li:nth-child(27) > .metadata
+		Snippet: <div class="metadata">   Last updated around 39106.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
+
+	28)	Target: li:nth-child(28) > .metadata
+		Snippet: <div class="metadata">   Last updated around 39072.   </div>
+		Messages:
+		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
