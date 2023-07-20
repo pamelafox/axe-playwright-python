@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "axe-playwright-python"
-version = "0.1.0"
+version = "0.1.1"
 description = "Automated web accessibility testing using axe-core engine and Playwright."
 authors = ["Pamela Fox <pamela.fox@gmail.com>"]
 readme = "README.md"

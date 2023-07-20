@@ -1,4 +1,4 @@
-# axe-python-playwright
+# axe-playwright-python
 
 Automated web accessibility testing using [axe-core](https://github.com/dequelabs/axe-core) engine
 and [Playwright](https://playwright.dev/python/docs/intro).
