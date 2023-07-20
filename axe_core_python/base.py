@@ -62,12 +62,17 @@ class AxeResults():
         self.response = response
 
     @property
-    def violations_count(self):
+    def violations_count(self) -> int:
+        """
+        Number of violations found.
+        """
         return len(self.response['violations'])
 
     def generate_snapshot(self):
         """
-        Return snapshot of violations, for use in snapshot testing
+        Return snapshot of violations, for use in snapshot testing.
+        Format:
+        <violation-id> (impact) : <number-of-nodes>
         """
         snapshot_lines = []
         for v in self.response['violations']:
@@ -89,7 +94,8 @@ class AxeResults():
     def generate_report(self, violation_id: str | None = None) -> str:
         """
         Return readable report of accessibility violations found.
-        https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#result-arrays
+        Defaults to all violations, but can be filtered by violation ID.
+        @param violation_id: Violation ID to report on
         """
         violations = self.response["violations"]
         report_str = ""

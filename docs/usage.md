@@ -1,68 +1,83 @@
-### Selenium
 
-TODO:
-
-<!-- For `context` and `options` paremeters see [axe-core API documentation](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#api-name-axerun).
-
-Remote testing:
+The first step is to run `axe.run()` on a Playwright `Page` object
 
 ```python
-from selenium import webdriver
-from axe_core_python.selenium import Axe
-from pathlib import Path
-import json
-
-desired_caps = {
-            'platform' : "win10",
-            'browserName' : "chrome",
-            'version' :  "67.0",
-            "resolution": "1024x768",
-            "name": "LambdaTest python google search test ",
-            "build": "LambdaTest python google search build",
-            "network": True,
-            "video": False,
-            "visual": False,
-            "console": False,
-        }
-
-# remote Chrome browser on [lambdatest.com](https://www.lambdatest.com)
-driver = webdriver.Remote(
-            desired_capabilities=desired_caps,
-            command_executor=f"https://{LAMBDATEST_USERNAME}:{LAMBDATEST_ACCESS_TOKEN}@hub.lambdatest.com/wd/hub"
-        )
-driver.get("https://www.google.com")
+from playwright.sync_api import sync_playwright
+from axe_core_python.sync_playwright import Axe
 
 axe = Axe()
 
-# run test only on element with `id="user-content"`
-result = axe.run(driver, context="#user-content")
-
-# save issues only
-violations_json = json.dumps(result['violations], indent=2)
-Path('violations.json').write_text(violations_json, encoding='utf8')
+with sync_playwright() as playwright:
+    browser = playwright.chromium.launch()
+    page = browser.new_page()
+    page.goto("https://www.google.com")
+    results = axe.run(page)
+    browser.close()
 ```
 
+The `results` object is an instance of `AxeResults`,
+and we can work with it in several ways.
 
-
-### Playwright
-
-TODO:
-
-Async function to test webpage for color contrast issues only:
+### Count the number of violations
 
 ```python
-from playwright.async_api import async_playwright
-from axe_core_python.async_playwright import Axe
-
-axe = Axe()
-
-async def test_color_contrast(url: str) -> dict:
-    async with sync_playwright() as playwright:
-        browser = await playwright.chromium.launch()
-        page = await browser.new_page()
-        await page.goto(url)
-        result = await axe.run(page, options={'runOnly': 'color-contrast'})
-        await browser.close()
-        return result['violations']
+print(f"Found {results.violations_count} violations.")
 ```
-https://camo.githubusercontent.com/41415ee92389d5dd1a36783f3f230a67aa8a9cd64a36f324719bf7011e8f0513/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f6178652d73656c656e69756d2d707974686f6e2e737667 -->
+
+```console
+Found 6 violations.
+```
+
+### Generate a human-readable report of violations
+
+```python
+print(results.generate_report())
+```
+
+```console
+Found 6 accessibility violations:
+Rule Violated:
+aria-allowed-role - Ensures role attribute has an appropriate value for the element
+    URL: https://dequeuniversity.com/rules/axe/4.4/aria-allowed-role?application=axeAPI
+    Impact Level: minor
+    Tags: ['cat.aria', 'best-practice']
+    Elements Affected:
+    
+
+        1)      Target: #APjFqb
+                Snippet: <textarea class="gLFyf" jsaction="paste:puy29d;" id="APjFqb" maxlength="2048" name="q" rows="1" aria-activedescendant="" aria-autocomplete="both" aria-controls="Alh6id" aria-expanded="false" aria-haspopup="both" aria-owns="Alh6id" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Search" type="search" value="" aria-label="Search" data-ved="0ahUKEwjwp-W68p2AAxVyDEQIHUlIA_IQ39UDCAc">
+                Messages:
+                * ARIA role combobox is not allowed for given element
+    ... (report truncated for brevity)
+```
+
+### Generate a snapshot of violations
+
+This can be helpful for snapshot testing.
+
+```python
+print(results.generate_snapshot())
+```
+
+```console
+aria-allowed-role (minor) : 1
+aria-valid-attr-value (critical) : 2
+color-contrast (serious) : 8
+landmark-one-main (moderate) : 1
+page-has-heading-one (moderate) : 1
+region (moderate) : 9
+```
+
+### Show the full axe-core response
+
+```python
+print(f"Full axe-core response: {results.response}")
+```
+
+The response is of the form described in the [axe-core API docs](https://github.com/dequelabs/axe-core/blob/develop/doc/API.md#results-object).
+
+### Save the full axe-core response to a file
+
+```python
+results.save_to_file("results.json")
+```

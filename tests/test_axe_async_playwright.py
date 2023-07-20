@@ -73,4 +73,4 @@ async def _perform_axe_run(page):
     await page.goto("file://" + str(TEST_FILE_PATH))
     axe = Axe()
     data = await axe.run(page=page)
-    return data
+    return data.response

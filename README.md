@@ -15,13 +15,13 @@ Automated web accessibility testing using [axe-core](https://github.com/dequelab
 ## Requirements
 
 - Python >= 3.10
-- [selenium](https://www.selenium.dev) >= 4.4.0 
-or [playwright](https://github.com/microsoft/playwright-python) >= 1.25.0
+- [playwright](https://github.com/microsoft/playwright-python) >= 1.25.0
 
 ## Installation
 
 ```console
-pip install -U axe-core-python
+pip install -U axe-playwright-python
+playwright install --with-deps
 ```
 
 ## Usage
@@ -36,11 +36,11 @@ with sync_playwright() as playwright:
     browser = playwright.chromium.launch()
     page = browser.new_page()
     page.goto("https://www.google.com")
-    result = axe.run(page)
+    results = axe.run(page)
     browser.close()
 
-violations = result['violations']
-print(f"{len(violations)} violations found.")
+print(f"Found {results.violations_count} violations.")
+print(f"Full axe-core response: {results.response}")
 ```
 
 For more examples see [documentation](https://ruslan-rv-ua.github.io/axe-core-python/).

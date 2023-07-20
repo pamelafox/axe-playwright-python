@@ -1,8 +1,7 @@
-import logging
-
 from .base import AxeBase, AxeResults
 
 DEFAULT_OPTIONS = {"resultTypes": ["violations"]}
+
 
 class Axe(AxeBase):
     def run(
@@ -18,7 +17,7 @@ class Axe(AxeBase):
             context (str | list | dict | None, optional): context.
                 Defaults to None.
             options (dict | None, optional): options.
-                Defaults to None.
+                Defaults to {"resultTypes": ["violations"]}.
 
         For more information on `context` and `options`, 
             view the [axe-core documentation]().

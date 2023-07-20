@@ -1,4 +1,6 @@
-from .base import AxeBase
+from .base import AxeBase, AxeResults
+
+DEFAULT_OPTIONS = {"resultTypes": ["violations"]}
 
 
 class Axe(AxeBase):
@@ -6,8 +8,8 @@ class Axe(AxeBase):
         self,
         page,
         context: str | list | dict | None = None,
-        options: dict | None = None,
-    ) -> dict:
+        options: dict | None = DEFAULT_OPTIONS,
+    ) -> AxeResults:
         """Asynchronously run axe accessibility checks against webpage.
 
         Args:
@@ -15,7 +17,7 @@ class Axe(AxeBase):
             context (str | list | dict | None, optional): context.
                 Defaults to None.
             options (dict | None, optional): options.
-                Defaults to None.
+                Defaults to {"resultTypes": ["violations"]}
 
         For more information on `context` and `options`,
             view the [axe-core documentation]().
@@ -32,4 +34,5 @@ class Axe(AxeBase):
         command_template = "axe.run(%s).then(results => {return results;})"
         command = command_template % args_str
         response = await page.evaluate(command)
-        return response
+        results = AxeResults(response)
+        return results
