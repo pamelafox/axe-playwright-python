@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pytest
 
-from axe_core_python.base import AxeResults
-from axe_core_python.sync_playwright import Axe
+from axe_playwright_python.base import AxeResults
+from axe_playwright_python.sync_playwright import Axe
 
 
 @pytest.fixture

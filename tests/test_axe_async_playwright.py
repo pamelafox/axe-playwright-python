@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 import pytest_asyncio
-from axe_core_python.async_playwright import Axe
+from axe_playwright_python.async_playwright import Axe
 from playwright.async_api import async_playwright
 
 TEST_FILE = "test_page.html"
