@@ -5,9 +5,8 @@ description = "Automated web accessibility testing using axe-core engine and Pla
 authors = ["Pamela Fox <pamela.fox@gmail.com>"]
 readme = "README.md"
 license = "MIT"
-homepage = "https://github.com/pamelafox/axe-playwright-python"
 repository = "https://github.com/pamelafox/axe-playwright-python"
-documentation = "https://github.com/pamelafox/axe-playwright-python"
+documentation = "https://pamelafox.github.io/axe-playwright-python"
 keywords = ["accessibility", "axe", "axe-core",  "playwright"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",

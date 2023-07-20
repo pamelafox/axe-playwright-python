@@ -5,7 +5,7 @@ and [Playwright](https://playwright.dev/python/docs/intro).
 
 ## Documentation
 
-- [Full documentation](https://pamelafox.github.io/axe-python-playwright/).
+- [Full documentation](https://pamelafox.github.io/axe-playwright-python/).
 
 ## Requirements
 
@@ -38,20 +38,8 @@ print(f"Found {results.violations_count} violations.")
 print(f"Full axe-core response: {results.response}")
 ```
 
-For more examples see [documentation](https://pamelafox.github.io/axe-python-playwright/).
+For more examples see [documentation](https://pamelafox.github.io/axe-playwright-python/).
 
-## Development
+## Contributing
 
-Install [poetry](https://python-poetry.org/).
-
-Install the project dependencies:
-
-```
-poetry install
-```
-
-Run the tests:
-
-```
-poetry run pytest
-```
+See [guide on contributing](CONTRIBUTING.md).
