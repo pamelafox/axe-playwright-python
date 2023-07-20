@@ -1,6 +1,6 @@
 ## ::: base.AxeBase
 
-## ::: selenium.Axe
+## ::: base.AxeResults
 
 ## ::: sync_playwright.Axe
 

@@ -1,10 +1,10 @@
-site_name: axe-core-python
-site_description: "axe-core-python documentation"
-site_author: "Ruslan Iskov"
+site_name: axe-playwright-python
+site_description: "axe-playwright-python documentation"
+site_author: "Pamela Fox"
 
 # Repository
-repo_name: "axe-core-python"
-repo_url: "https://github.com/ruslan-rv-ua/axe-core-python"
+repo_name: "axe-playwright-python"
+repo_url: "https://github.com/pamelafox/axe-playwright-python"
 
 # Copyright
 copyright: "Copyright &copy; Ruslan Iskov"
@@ -12,10 +12,7 @@ copyright: "Copyright &copy; Ruslan Iskov"
 theme:
   name: "material"
   language: "en"
-  palette:
-    scheme: slate
-    # primary: 'black'
-    accent: 'white'
+  highlightjs: true
 
 
 plugins:
@@ -31,17 +28,10 @@ plugins:
             show_root_toc_entry: false
             docstring_section_style: list
             merge_init_into_class: true
-            # show_if_no_docstring: true
 
 # Customization
 extra:
   social:
-  #  - type: 'github'
-  #    link: 'https://github.com/ruslan-rv-ua/axe-core-python'
-  #  - type: 'twitter'
-  #    link: 'https://twitter.com/squidfunk'
-  #  - type: 'linkedin'
-  #    link: 'https://linkedin.com/in/squidfunk'
   search:
     language: "en"
 
@@ -49,8 +39,3 @@ nav:
   - About: index.md
   - Usage: usage.md
   - API: api.md
-
-# Google Analytics
-# google_analytics:
-#  - 'UA-XXXXXXXX-X'
-#  - 'auto'

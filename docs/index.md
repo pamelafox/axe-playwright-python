@@ -10,43 +10,27 @@ Automated web accessibility testing using [axe-core](https://github.com/dequelab
 
 ## Requirements
 
-You will need the following prerequisites in order to use axe-core-python:
+You will need the following prerequisites in order to use this library:
 
 - Python >= 3.10
-- [selenium](https://www.selenium.dev) >= 4.4.0 
-or [playwright](https://github.com/microsoft/playwright-python) >= 1.25.0
+-  [playwright](https://github.com/microsoft/playwright-python) >= 1.25.0
 
 ## Installation
 
 ```console
-pip install -U axe-core-python
+python3 -m pip install -U axe-playwright-python
 ```
-
-### Selenium
-
-To install Selenium:
-
-```console
-pip install selenium
-```
-
-The appropriate driver for the browser you intend to use should be 
-downloaded and added to your path, 
-e.g. [geckodriver](https://github.com/mozilla/geckodriver/releases) for Firefox:
-
-To simplify management of binary drivers for different browsers: 
-[Webdriver Manager for Python](https://github.com/SergeyPirogov/webdriver_manager).
 
 ### Playwright
 
 To install Playwright ([docs](https://playwright.bootcss.com/python/docs/installation)):
 
 ```console
-pip install playwright
+python3 -m pip install playwright
 ```
 
 Also install browser binaries:
 
 ```console
-python -m playwright install
+python3 -m playwright install --with-deps
 ```
