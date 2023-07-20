@@ -1,0 +1,948 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="axe-playwright-python documentation">
+      
+      
+        <meta name="author" content="Pamela Fox">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>API - axe-playwright-python</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#base.AxeBase" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="axe-playwright-python" class="md-header__button md-logo" aria-label="axe-playwright-python" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            axe-playwright-python
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pamelafox/axe-playwright-python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    axe-playwright-python
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="axe-playwright-python" class="md-nav__button md-logo" aria-label="axe-playwright-python" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    axe-playwright-python
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pamelafox/axe-playwright-python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    axe-playwright-python
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        API
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#base.AxeBase" class="md-nav__link">
+    AxeBase
+  </a>
+  
+    <nav class="md-nav" aria-label="AxeBase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base.AxeBase.from_file" class="md-nav__link">
+    from_file()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base.AxeResults" class="md-nav__link">
+    AxeResults
+  </a>
+  
+    <nav class="md-nav" aria-label="AxeResults">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base.AxeResults.violations_count" class="md-nav__link">
+    violations_count
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base.AxeResults.generate_report" class="md-nav__link">
+    generate_report()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base.AxeResults.generate_snapshot" class="md-nav__link">
+    generate_snapshot()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base.AxeResults.save_to_file" class="md-nav__link">
+    save_to_file()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sync_playwright.Axe" class="md-nav__link">
+    Axe
+  </a>
+  
+    <nav class="md-nav" aria-label="Axe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sync_playwright.Axe.run" class="md-nav__link">
+    run()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#async_playwright.Axe" class="md-nav__link">
+    Axe
+  </a>
+  
+    <nav class="md-nav" aria-label="Axe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#async_playwright.Axe.run" class="md-nav__link">
+    run()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#base.AxeBase" class="md-nav__link">
+    AxeBase
+  </a>
+  
+    <nav class="md-nav" aria-label="AxeBase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base.AxeBase.from_file" class="md-nav__link">
+    from_file()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base.AxeResults" class="md-nav__link">
+    AxeResults
+  </a>
+  
+    <nav class="md-nav" aria-label="AxeResults">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base.AxeResults.violations_count" class="md-nav__link">
+    violations_count
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base.AxeResults.generate_report" class="md-nav__link">
+    generate_report()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base.AxeResults.generate_snapshot" class="md-nav__link">
+    generate_snapshot()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base.AxeResults.save_to_file" class="md-nav__link">
+    save_to_file()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sync_playwright.Axe" class="md-nav__link">
+    Axe
+  </a>
+  
+    <nav class="md-nav" aria-label="Axe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sync_playwright.Axe.run" class="md-nav__link">
+    run()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#async_playwright.Axe" class="md-nav__link">
+    Axe
+  </a>
+  
+    <nav class="md-nav" aria-label="Axe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#async_playwright.Axe.run" class="md-nav__link">
+    run()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/pamelafox/axe-playwright-python/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+  <h1>API</h1>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="base.AxeBase" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">base</span><span class="o">.</span><span class="n">AxeBase</span><span class="p">(</span><span class="n">axe_script</span><span class="o">=</span><span class="n">AXE_SCRIPT</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+      <p class="doc doc-class-bases">
+        Bases: <code><span title="abc.ABC">ABC</span></code></p>
+
+  
+      <p>Abstract base class.</p>
+
+  
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b>axe_script</b>
+            (<code>str</code>)
+        – <p><code>axe.js</code> or <code>axe.min.js</code> javascript.
+Defaults to AXE_SCRIPT.</p>
+      </li>
+  </ul>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="base.AxeBase.from_file" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">from_file</span><span class="p">(</span><span class="n">axe_min_js_path</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Load axe script from file and create Axe instance.</p>
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b>axe_min_js_path</b>
+            (<code>str | <span title="pathlib.Path">Path</span></code>)
+        – <p>path to <code>axe.js</code> or <code>axe.min.js</code></p>
+      </li>
+  </ul>
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+<b>AxeBase</b>(            <code><a class="autorefs autorefs-internal" title="base.AxeBase" href="#base.AxeBase">AxeBase</a></code>
+)        – <p>Axe instance</p>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="base.AxeResults" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">base</span><span class="o">.</span><span class="n">AxeResults</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="base.AxeResults.violations_count" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">violations_count</span><span class="p">:</span> <span class="nb">int</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Number of violations found.</p>
+  </div>
+
+</div>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="base.AxeResults.generate_report" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">generate_report</span><span class="p">(</span><span class="n">violation_id</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return readable report of accessibility violations found.
+Defaults to all violations, but can be filtered by violation ID.
+@param violation_id: Violation ID to report on</p>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="base.AxeResults.generate_snapshot" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">generate_snapshot</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return snapshot of violations, for use in snapshot testing.
+Format:
+<violation-id> (impact) : <number-of-nodes></p>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="base.AxeResults.save_to_file" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">save_to_file</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">violations_only</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Save results to file.
+@param results: Results from Axe analysis
+@param file_path: File path for saving results file</p>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="sync_playwright.Axe" class="doc doc-heading">
+        <code>sync_playwright.Axe</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+      <p class="doc doc-class-bases">
+        Bases: <code><span title="sync_playwright.base.AxeBase">AxeBase</span></code></p>
+
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="sync_playwright.Axe.run" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">run</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="n">DEFAULT_OPTIONS</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Run axe accessibility checks against webpage.</p>
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b>page</b>
+            (<code>playwright.<span title="playwright.sync_api">sync_api</span>.<span title="playwright.sync_api._generated">_generated</span>.<span title="playwright.sync_api._generated.Page">Page</span></code>)
+        – <p>Page object</p>
+      </li>
+      <li class="field-body">
+        <b>context</b>
+            (<code>str | list | dict | None</code>)
+        – <p>context.
+Defaults to None.</p>
+      </li>
+      <li class="field-body">
+        <b>options</b>
+            (<code>dict | None</code>)
+        – <p>options.
+Defaults to {"resultTypes": ["violations"]}.</p>
+      </li>
+  </ul>
+      <p>For more information on <code>context</code> and <code>options</code>, 
+    view the <a href="">axe-core documentation</a>.</p>
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+<b>dict</b>(            <code><span title="sync_playwright.base.AxeResults">AxeResults</span></code>
+)        – <p>test result</p>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="async_playwright.Axe" class="doc doc-heading">
+        <code>async_playwright.Axe</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+      <p class="doc doc-class-bases">
+        Bases: <code><span title="async_playwright.base.AxeBase">AxeBase</span></code></p>
+
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="async_playwright.Axe.run" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">run</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="n">DEFAULT_OPTIONS</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Asynchronously run axe accessibility checks against webpage.</p>
+
+  <p>Parameters:</p>
+  <ul>
+      <li class="field-body">
+        <b>page</b>
+            (<code>playwright.<span title="playwright.async_api">async_api</span>.<span title="playwright.async_api.Page">Page</span></code>)
+        – <p>Page object</p>
+      </li>
+      <li class="field-body">
+        <b>context</b>
+            (<code>str | list | dict | None</code>)
+        – <p>context.
+Defaults to None.</p>
+      </li>
+      <li class="field-body">
+        <b>options</b>
+            (<code>dict | None</code>)
+        – <p>options.
+Defaults to {"resultTypes": ["violations"]}</p>
+      </li>
+  </ul>
+      <p>For more information on <code>context</code> and <code>options</code>,
+    view the <a href="">axe-core documentation</a>.</p>
+
+  <p>Returns:</p>
+  <ul>
+      <li class="field-body">
+<b>dict</b>(            <code><span title="async_playwright.base.AxeResults">AxeResults</span></code>
+)        – <p>test result</p>
+      </li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../usage/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Usage" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Usage
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Ruslan Iskov
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
