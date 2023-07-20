@@ -7,7 +7,7 @@ and [Playwright](https://playwright.dev/python/docs/intro).
 
 - [Full documentation](https://pamelafox.github.io/axe-playwright-python/).
 
-## Requirements
+## Dependencies
 
 - Python >= 3.10
 - [playwright](https://github.com/microsoft/playwright-python) >= 1.25.0

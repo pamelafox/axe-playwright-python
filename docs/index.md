@@ -24,7 +24,7 @@ To install Playwright ([docs](https://playwright.bootcss.com/python/docs/install
 python3 -m pip install playwright
 ```
 
-Also install browser binaries:
+Then install browser binaries:
 
 ```console
 python3 -m playwright install --with-deps
