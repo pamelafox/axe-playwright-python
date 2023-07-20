@@ -20,7 +20,7 @@ plugins:
       default_handler: python
       handlers:
         python:
-          paths: [axe_core_python]
+          paths: [axe_playwright_python]
           options:
             show_source: false
             heading_level: 2

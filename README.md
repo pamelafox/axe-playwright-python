@@ -1,16 +1,11 @@
-# axe-core-python
+# axe-python-playwright
 
-![PyPI](https://img.shields.io/pypi/v/axe-core-python) 
-![PyPI - License](https://img.shields.io/pypi/l/axe-core-python) 
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/axe-core-python)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/axe-core-python) 
-
-
-Automated web accessibility testing using [axe-core](https://github.com/dequelabs/axe-core) engine.
+Automated web accessibility testing using [axe-core](https://github.com/dequelabs/axe-core) engine
+and [Playwright](https://playwright.dev/python/docs/intro).
 
 ## Documentation
 
-- [Full documentation](https://ruslan-rv-ua.github.io/axe-core-python/).
+- [Full documentation](https://pamelafox.github.io/axe-python-playwright/).
 
 ## Requirements
 
@@ -20,8 +15,8 @@ Automated web accessibility testing using [axe-core](https://github.com/dequelab
 ## Installation
 
 ```console
-pip install -U axe-playwright-python
-playwright install --with-deps
+python3 -m pip install -U axe-playwright-python
+python3 -m playwright install --with-deps
 ```
 
 ## Usage
@@ -43,7 +38,7 @@ print(f"Found {results.violations_count} violations.")
 print(f"Full axe-core response: {results.response}")
 ```
 
-For more examples see [documentation](https://ruslan-rv-ua.github.io/axe-core-python/).
+For more examples see [documentation](https://pamelafox.github.io/axe-python-playwright/).
 
 ## Development
 
