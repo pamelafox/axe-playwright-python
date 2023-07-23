@@ -1,8 +1,9 @@
 from pathlib import Path
 
 import pytest
-from axe_playwright_python.sync_playwright import Axe
 from playwright.sync_api import sync_playwright
+
+from axe_playwright_python.sync_playwright import Axe
 
 TEST_FILE = "test_page.html"
 TEST_FILE_PATH = Path(__file__).parent.absolute() / TEST_FILE

@@ -6,13 +6,13 @@ Install [poetry](https://python-poetry.org/).
 
 Install the project dependencies:
 
-```
+```sh
 poetry install
 ```
 
 Run the tests:
 
-```
+```sh
 poetry run pytest
 ```
 
@@ -21,19 +21,19 @@ poetry run pytest
 
 Set credentials for PyPi:
 
-```
+```sh
 poetry config pypi-token.pypi <token>
 ```
 
 Build the wheels:
 
-```
+```sh
 poetry build
 ```
 
 Publish to PyPi:
 
-```
+```sh
 poetry publish
 ```
 
@@ -41,12 +41,12 @@ poetry publish
 
 Build locally:
 
-```
+```sh
 mkdocs serve
 ```
 
 Deploy to GitHub Pages:
 
-```
+```sh
 mkdocs gh-deploy
 ```

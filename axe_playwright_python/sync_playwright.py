@@ -19,7 +19,7 @@ class Axe(AxeBase):
             options (dict | None, optional): options.
                 Defaults to {"resultTypes": ["violations"]}.
 
-        For more information on `context` and `options`, 
+        For more information on `context` and `options`,
             view the [axe-core documentation]().
 
         Returns:

@@ -1,5 +1,5 @@
-from playwright.sync_api import sync_playwright
 from axe_core_python.sync_playwright import Axe
+from playwright.sync_api import sync_playwright
 
 axe = Axe()
 

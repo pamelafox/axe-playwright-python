@@ -1,10 +1,10 @@
 Rule Violated:
 color-contrast - Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds
-    URL: https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI
-    Impact Level: serious
-    Tags: ['cat.color', 'wcag2aa', 'wcag143']
-    Elements Affected:
-    
+	URL: https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI
+	Impact Level: serious
+	Tags: ['cat.color', 'wcag2aa', 'wcag143']
+	Elements Affected:
+	
 
 	1)	Target: li:nth-child(1) > .metadata
 		Snippet: <div class="metadata">   Last updated around 44761.   </div>
