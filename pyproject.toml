@@ -35,7 +35,8 @@ test = [
     "mkdocs == 1.4.3",
     "mkdocstrings == 0.22.0",
     "mkdocs-material == 9.1.19",
-    "black == 23.7.0"
+    "black == 23.7.0",
+    "ruff == 0.0.280",
 ]
 build = [
     "flit"
