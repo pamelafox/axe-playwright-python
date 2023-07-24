@@ -1,15 +1,16 @@
-[tool.poetry]
+[project]
 name = "axe-playwright-python"
-version = "0.1.2"
 description = "Automated web accessibility testing using axe-core engine and Playwright."
-authors = ["Pamela Fox <pamela.fox@gmail.com>"]
+version = "0.1.2"
+authors = [{name = "Pamela Fox", "email" = "pamela.fox@gmail.com"}]
+requires-python = ">=3.9"
 readme = "README.md"
-license = "MIT"
-repository = "https://github.com/pamelafox/axe-playwright-python"
-documentation = "https://pamelafox.github.io/axe-playwright-python"
+license = {file = "LICENSE"}
+dependencies = [
+    "playwright >= 1.36.0"
+    ]
 keywords = ["accessibility", "axe", "axe-core",  "playwright"]
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
@@ -19,24 +20,33 @@ classifiers = [
     "Topic :: Software Development",
     "Topic :: Software Development :: Quality Assurance",
     "Topic :: Software Development :: Testing",
+    ]
+
+[project.urls]
+GitHub = "https://github.com/pamelafox/pytest-axe-playwright-snapshot"
+Documentation = "https://pamelafox.github.io/axe-playwright-python"
+
+[project.optional-dependencies]
+test = [
+    "pytest == 7.4.0",
+    "pytest-cov == 4.1.0",
+    "pytest-playwright == 0.3.3",
+    "pytest-asyncio == 0.21.1",
+    "mkdocs == 1.4.3",
+    "mkdocstrings == 0.22.0",
+    "mkdocs-material == 9.1.19",
+    "black == 23.7.0"
+]
+build = [
+    "flit"
 ]
 
-[tool.poetry.dependencies]
-python = "^3.9"
-playwright = "^1.36.0"
-
-[tool.poetry.dev-dependencies]
-pytest = "^7.4"
-black = { version = "^23.7.0", allow-prereleases = true }
-pytest-asyncio = "^0.21.0"
-mkdocs = "^1.4.3"
-mkdocstrings = {extras = ["python"], version = "^0.22.0"}
-mkdocs-material = "^9.1.19"
-flake8 = "^6.0.0"
-
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "axe_playwright_python"
 
 [tool.ruff]
 line-length = 100

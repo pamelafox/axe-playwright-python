@@ -2,22 +2,27 @@
 
 ## Development
 
-Install [poetry](https://python-poetry.org/).
-
 Install the project dependencies:
 
 ```sh
-poetry install
+python3 -m pip install -e '.[test]'
+playwright install --with-deps
 ```
 
 Run the tests:
 
 ```sh
-poetry run pytest
+python3 -m pytest
 ```
 
 ## Publishing
 
+
+Install the build dependencies:
+
+```sh
+python3 -m pip install -e '.[build]'
+```
 
 Set credentials for PyPi:
 
