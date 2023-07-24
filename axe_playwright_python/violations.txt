@@ -4,4 +4,4 @@ $id - $description
 	Impact Level: $impact
 	Tags: $tags
 	Elements Affected:
-	$elements
+$elements

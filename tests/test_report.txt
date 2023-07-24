@@ -5,7 +5,7 @@ color-contrast - Ensures the contrast between foreground and background colors m
 	Impact Level: serious
 	Tags: ['cat.color', 'wcag2aa', 'wcag143']
 	Elements Affected:
-	
+
 
 	1)	Target: li:nth-child(1) > .metadata
 		Snippet: <div class="metadata">   Last updated around 44761.   </div>
@@ -152,7 +152,7 @@ image-alt - Ensures <img> elements have alternate text or a role of none or pres
 	Impact Level: critical
 	Tags: ['cat.text-alternatives', 'wcag2a', 'wcag111', 'section508', 'section508.22.a', 'ACT']
 	Elements Affected:
-	
+
 
 	1)	Target: li:nth-child(1) > .thumbnail
 		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_translationtelephone.png">
