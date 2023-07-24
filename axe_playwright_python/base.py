@@ -44,7 +44,7 @@ class AxeBase(ABC):
         pass
 
     @classmethod
-    def from_file(cls, axe_min_js_path: str | Path) -> "AxeBase":
+    def from_file(cls, axe_min_js_path: str | Path) -> AxeBase:
         """Load axe script from file and create Axe instance.
 
         Args:
