@@ -5,8 +5,9 @@
 Install the project dependencies:
 
 ```sh
-python3 -m pip install -e '.[test]'
+python3 -m pip install -e '.[dev]'
 playwright install --with-deps
+pre-commit install
 ```
 
 Run the tests:
@@ -17,12 +18,6 @@ python3 -m pytest
 
 ## Publishing
 
-
-Install the build dependencies:
-
-```sh
-python3 -m pip install -e '.[build]'
-```
 
 Set credentials for PyPi:
 

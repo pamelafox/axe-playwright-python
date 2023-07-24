@@ -28,7 +28,7 @@ GitHub = "https://github.com/pamelafox/pytest-axe-playwright-snapshot"
 Documentation = "https://pamelafox.github.io/axe-playwright-python"
 
 [project.optional-dependencies]
-test = [
+dev = [
     "pytest == 7.4.0",
     "pytest-cov == 4.1.0",
     "pytest-playwright == 0.3.3",
@@ -38,8 +38,7 @@ test = [
     "mkdocs-material == 9.1.19",
     "black == 23.7.0",
     "ruff == 0.0.280",
-]
-build = [
+    "pre-commit == 3.3.3",
     "flit"
 ]
 
