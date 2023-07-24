@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from .base import AxeBase, AxeResults
 
 DEFAULT_OPTIONS = {"resultTypes": ["violations"]}

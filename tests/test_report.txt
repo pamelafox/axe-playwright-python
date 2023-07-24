@@ -1,11 +1,11 @@
 Found 2 accessibility violations:
 Rule Violated:
 color-contrast - Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds
-    URL: https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI
-    Impact Level: serious
-    Tags: ['cat.color', 'wcag2aa', 'wcag143']
-    Elements Affected:
-    
+	URL: https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI
+	Impact Level: serious
+	Tags: ['cat.color', 'wcag2aa', 'wcag143']
+	Elements Affected:
+	
 
 	1)	Target: li:nth-child(1) > .metadata
 		Snippet: <div class="metadata">   Last updated around 44761.   </div>
@@ -148,11 +148,11 @@ color-contrast - Ensures the contrast between foreground and background colors m
 		* Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.1pt (10.8333px), font weight: normal). Expected contrast ratio of 4.5:1
 Rule Violated:
 image-alt - Ensures <img> elements have alternate text or a role of none or presentation
-    URL: https://dequeuniversity.com/rules/axe/4.4/image-alt?application=axeAPI
-    Impact Level: critical
-    Tags: ['cat.text-alternatives', 'wcag2a', 'wcag111', 'section508', 'section508.22.a', 'ACT']
-    Elements Affected:
-    
+	URL: https://dequeuniversity.com/rules/axe/4.4/image-alt?application=axeAPI
+	Impact Level: critical
+	Tags: ['cat.text-alternatives', 'wcag2a', 'wcag111', 'section508', 'section508.22.a', 'ACT']
+	Elements Affected:
+	
 
 	1)	Target: li:nth-child(1) > .thumbnail
 		Snippet: <img class="thumbnail" src="http://www.pamelafox.org/static/thumbnail_translationtelephone.png">

@@ -1,9 +1,10 @@
+from __future__ import annotations
+
+import json
+import os
 from abc import ABC, abstractmethod
 from pathlib import Path
-import os
-import json
 from string import Template
-
 
 AXE_FILE_NAME = "axe.min.js"
 AXE_FILE_PATH = Path(__file__).parent / AXE_FILE_NAME
@@ -43,7 +44,7 @@ class AxeBase(ABC):
         pass
 
     @classmethod
-    def from_file(cls, axe_min_js_path: str | Path) -> "AxeBase":
+    def from_file(cls, axe_min_js_path: str | Path) -> AxeBase:
         """Load axe script from file and create Axe instance.
 
         Args:
@@ -56,8 +57,7 @@ class AxeBase(ABC):
         return cls(axe_script=axe_script)
 
 
-class AxeResults():
-
+class AxeResults:
     def __init__(self, response: dict):
         self.response = response
 
@@ -66,7 +66,7 @@ class AxeResults():
         """
         Number of violations found.
         """
-        return len(self.response['violations'])
+        return len(self.response["violations"])
 
     def generate_snapshot(self):
         """
@@ -75,22 +75,22 @@ class AxeResults():
         <violation-id> (impact) : <number-of-nodes>
         """
         snapshot_lines = []
-        for v in self.response['violations']:
+        for v in self.response["violations"]:
             snapshot_lines.append(f"{v['id']} ({v['impact']}) : {len(v['nodes'])}")
-        return '\n'.join(snapshot_lines)
+        return "\n".join(snapshot_lines)
 
     def __violation_report(self, violation: dict, template: Template) -> str:
         nodes_str = ""
         for num, node in enumerate(violation["nodes"], start=1):
-            targets = ', '.join(node["target"])
+            targets = ", ".join(node["target"])
             nodes_str += f"\n\n\t{num})\tTarget: {targets}"
-            snippet = node.get('html').replace('\n', '')
+            snippet = node.get("html").replace("\n", "")
             nodes_str += f"\n\t\tSnippet: {snippet}"
             nodes_str += "\n\t\tMessages:"
             for item in node.get("all", []) + node.get("any", []) + node.get("none", []):
                 nodes_str += "\n\t\t* " + item["message"]
         return template.substitute(violation, elements=nodes_str)
-    
+
     def generate_report(self, violation_id: str | None = None) -> str:
         """
         Return readable report of accessibility violations found.
@@ -109,9 +109,10 @@ class AxeResults():
                 continue
             report_str += self.__violation_report(violation, template)
         return report_str
-    
-    def save_to_file(self, file_path: str | Path | None = None,
-                     violations_only: bool = False) -> None:
+
+    def save_to_file(
+        self, file_path: str | Path | None = None, violations_only: bool = False
+    ) -> None:
         """Save results to file.
         @param results: Results from Axe analysis
         @param file_path: File path for saving results file
@@ -126,5 +127,3 @@ class AxeResults():
             cwd = Path.cwd()
             file_path = cwd / "results.json"
         Path(file_path).write_text(json.dumps(response, indent=4))
-
-

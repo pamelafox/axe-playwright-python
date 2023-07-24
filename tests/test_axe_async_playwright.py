@@ -2,8 +2,9 @@ from pathlib import Path
 
 import pytest
 import pytest_asyncio
-from axe_playwright_python.async_playwright import Axe
 from playwright.async_api import async_playwright
+
+from axe_playwright_python.async_playwright import Axe
 
 TEST_FILE = "test_page.html"
 TEST_FILE_PATH = Path(__file__).parent.absolute() / TEST_FILE

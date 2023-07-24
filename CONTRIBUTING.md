@@ -2,18 +2,18 @@
 
 ## Development
 
-Install [poetry](https://python-poetry.org/).
-
 Install the project dependencies:
 
-```
-poetry install
+```sh
+python3 -m pip install -e '.[dev]'
+playwright install --with-deps
+pre-commit install
 ```
 
 Run the tests:
 
-```
-poetry run pytest
+```sh
+python3 -m pytest
 ```
 
 ## Publishing
@@ -21,19 +21,19 @@ poetry run pytest
 
 Set credentials for PyPi:
 
-```
+```sh
 poetry config pypi-token.pypi <token>
 ```
 
 Build the wheels:
 
-```
+```sh
 poetry build
 ```
 
 Publish to PyPi:
 
-```
+```sh
 poetry publish
 ```
 
@@ -41,12 +41,12 @@ poetry publish
 
 Build locally:
 
-```
+```sh
 mkdocs serve
 ```
 
 Deploy to GitHub Pages:
 
-```
+```sh
 mkdocs gh-deploy
 ```

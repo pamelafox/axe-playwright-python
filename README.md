@@ -43,3 +43,7 @@ For more examples see [documentation](https://pamelafox.github.io/axe-playwright
 ## Contributing
 
 See [guide on contributing](CONTRIBUTING.md).
+
+## Acknowledgments
+
+This project is based on [axe-core-python](https://github.com/ruslan-rv-ua/axe-core-python) by @ruslan-rv-ua and also takes inspiration from [axe-selenium-python](https://pypi.org/project/axe-selenium-python/) for output formats.
