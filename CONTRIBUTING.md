@@ -18,23 +18,10 @@ python3 -m pytest
 
 ## Publishing
 
-
-Set credentials for PyPi:
-
-```sh
-poetry config pypi-token.pypi <token>
-```
-
-Build the wheels:
-
-```sh
-poetry build
-```
-
 Publish to PyPi:
 
 ```sh
-poetry publish
+flit publish
 ```
 
 ## Documentation
