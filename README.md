@@ -7,6 +7,11 @@ and [Playwright](https://playwright.dev/python/docs/intro).
 
 - [Full documentation](https://pamelafox.github.io/axe-playwright-python/).
 
+### Further Reading & More
+- ["Automated accessibility audits" - Pamela Fox (North Bay Python 2023)](https://www.youtube.com/watch?v=J-4Qa6PSomM&pp=ygUUcGFtZWxhIGZveCBub3J0aCBiYXk%3D)
+- [Using Python to Fix my Accessibility Night of a Website](https://kjaymiller.com/blog/using-python-to-fix-my-accessibility-nightmare-of-a-website.html) & [Website Accessibility Audit Reports via GH Actions](https://kjaymiller.com/blog/website-accessibility-audit-reports-via-gh-actions.html) by [Jay Miller](https://github.com/kjaymiller)
+
+
 ## Dependencies
 
 - Python >= 3.10
