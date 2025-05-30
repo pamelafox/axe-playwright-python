@@ -24,7 +24,7 @@ classifiers = [
     ]
 
 [project.urls]
-GitHub = "https://github.com/pamelafox/pytest-axe-playwright-snapshot"
+GitHub = "https://github.com/pamelafox/axe-playwright-python"
 Documentation = "https://pamelafox.github.io/axe-playwright-python"
 
 [project.optional-dependencies]
