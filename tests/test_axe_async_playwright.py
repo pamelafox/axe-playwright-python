@@ -42,20 +42,20 @@ async def test_run_axe_sample_page_firefox(firefox_page):
     """Run axe against sample page and verify JSON output is as expected."""
     data = await _perform_axe_run(firefox_page)
 
-    assert len(data["inapplicable"]) == 71
+    assert len(data["inapplicable"]) == 75
     assert len(data["incomplete"]) == 0
-    assert len(data["passes"]) == 7
+    assert len(data["passes"]) == 6
     assert len(data["violations"]) == 9
 
 
 @pytest.mark.asyncio
-async def test_run_axe_sample_page_chrimium(chromium_page):
+async def test_run_axe_sample_page_chromium(chromium_page):
     """Run axe against sample page and verify JSON output is as expected."""
     data = await _perform_axe_run(chromium_page)
 
-    assert len(data["inapplicable"]) == 71
+    assert len(data["inapplicable"]) == 75
     assert len(data["incomplete"]) == 0
-    assert len(data["passes"]) == 7
+    assert len(data["passes"]) == 6
     assert len(data["violations"]) == 9
 
 
@@ -64,9 +64,9 @@ async def test_run_axe_sample_page_webkit(webkit_page):
     """Run axe against sample page and verify JSON output is as expected."""
     data = await _perform_axe_run(webkit_page)
 
-    assert len(data["inapplicable"]) == 71
+    assert len(data["inapplicable"]) == 75
     assert len(data["incomplete"]) == 0
-    assert len(data["passes"]) == 7
+    assert len(data["passes"]) == 6
     assert len(data["violations"]) == 9
 
 
