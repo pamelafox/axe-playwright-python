@@ -1,7 +1,7 @@
 [project]
 name = "axe-playwright-python"
 description = "Automated web accessibility testing using axe-core engine and Playwright."
-version = "0.1.5"
+version = "0.1.6"
 authors = [{name = "Pamela Fox", "email" = "pamela.fox@gmail.com"}]
 requires-python = ">=3.8"
 readme = "README.md"
@@ -17,6 +17,8 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Adaptive Technologies",
     "Topic :: Software Development",
     "Topic :: Software Development :: Quality Assurance",
