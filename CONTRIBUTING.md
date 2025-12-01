@@ -5,7 +5,7 @@
 Install the project dependencies:
 
 ```sh
-python3 -m pip install -e '.[dev]'
+python -m pip install -e '.[dev]'
 playwright install --with-deps
 pre-commit install
 ```
@@ -13,22 +13,7 @@ pre-commit install
 Run the tests:
 
 ```sh
-python3 -m pytest
-```
-
-## Publishing
-
-Configure flit to use token-based PyPi credentials:
-
-```sh
-export FLIT_USERNAME=__token__
-export FLIT_PASSWORD=your-pypi-token
-```
-
-Publish to PyPi:
-
-```sh
-flit publish
+python -m pytest
 ```
 
 ## Documentation
@@ -44,3 +29,19 @@ Deploy to GitHub Pages:
 ```sh
 mkdocs gh-deploy
 ```
+
+## Publishing
+
+1. Update the CHANGELOG with description of changes
+
+2. Update the version number in pyproject.toml
+
+3. Push the changes to the main branch
+
+4. Publish to PyPi:
+
+    ```sh
+    export FLIT_USERNAME=__token__
+    export FLIT_PASSWORD=your-pypi-token
+    flit publish
+    ```

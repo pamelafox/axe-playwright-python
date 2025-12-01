@@ -7,7 +7,7 @@ repo_name: "axe-playwright-python"
 repo_url: "https://github.com/pamelafox/axe-playwright-python"
 
 # Copyright
-copyright: "Copyright &copy; Ruslan Iskov"
+copyright: "Copyright &copy; Ruslan Iskov, Pamela Fox"
 
 theme:
   name: "material"
