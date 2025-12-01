@@ -33,7 +33,7 @@ class AxeBase(ABC):
             args_list.append(repr(context))
         # If options is passed, add to args
         if options:
-            args_list.append(str(options))
+            args_list.append(json.dumps(options))
         # Add comma delimiter only if both parameters are passed
         args = ",".join(args_list)
 
