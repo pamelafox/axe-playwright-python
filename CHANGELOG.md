@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.9] - August 29, 2026
+
+- Upgraded axe-core JS version to v4.13.0. You may see the number of violations change as a result, as new axe-core versions sometimes add new rules and update existing ones.
+
 ## [0.1.8] - July 24, 2026
 
 - Upgraded axe-core JS version to v4.12.1. You may see the number of violations change as a result, as new axe-core versions sometimes add new rules and update existing ones.
