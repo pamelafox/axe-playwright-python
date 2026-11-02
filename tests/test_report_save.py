@@ -70,3 +70,29 @@ def test_save_results_violations_only(test_results_json):
 def test_violations_count(test_results_json):
     results = AxeResults(test_results_json)
     assert results.violations_count == 2
+
+
+def test_report_shadow_dom_target():
+    results = AxeResults(
+        {
+            "violations": [
+                {
+                    "id": "button-name",
+                    "impact": "critical",
+                    "description": "Ensure buttons have discernible text",
+                    "help": "Buttons must have discernible text",
+                    "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/button-name",
+                    "tags": ["wcag2a"],
+                    "nodes": [
+                        {
+                            "target": [["#host", "button"]],
+                            "html": "<button></button>",
+                            "any": [{"message": "Element does not have inner text"}],
+                        }
+                    ],
+                }
+            ]
+        }
+    )
+    report = results.generate_report()
+    assert "Target: #host >>> button" in report
