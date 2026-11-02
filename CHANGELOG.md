@@ -2,9 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.9] - August 29, 2026
+## [0.1.9] - November 2, 2026
 
-- Upgraded axe-core JS version to v4.13.0. You may see the number of violations change as a result, as new axe-core versions sometimes add new rules and update existing ones.
+- Upgraded axe-core JS version to v4.14.0. You may see the number of violations change as a result, as new axe-core versions sometimes add new rules and update existing ones.
+- This axe-core upgrade fixes relative `@import` URLs in stylesheets being resolved against the page URL instead of the stylesheet URL, which caused spurious 404 requests and incomplete `css-orientation-lock` results.
 - Fixed `generate_report()` raising `TypeError` when a violation targets an element inside shadow DOM (nested target selectors). Shadow DOM targets are now shown as `host >>> element`.
 
 ## [0.1.8] - July 24, 2026

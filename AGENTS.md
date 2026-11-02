@@ -8,9 +8,9 @@ To upgrade the bundled `axe-core` JavaScript library (`axe_playwright_python/axe
    ```bash
    bash .github/scripts/install-axe.sh
    ```
-   Optionally, specify a target version (e.g., `4.13.0`):
+   Optionally, specify a target version (e.g., `4.14.0`):
    ```bash
-   bash .github/scripts/install-axe.sh 4.13.0
+   bash .github/scripts/install-axe.sh 4.14.0
    ```
 
 2. Run the test suite:
