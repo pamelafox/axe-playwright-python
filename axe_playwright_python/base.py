@@ -82,7 +82,10 @@ class AxeResults:
     def __violation_report(self, violation: dict, template: Template) -> str:
         nodes_str = ""
         for num, node in enumerate(violation["nodes"], start=1):
-            targets = ", ".join(node["target"])
+            # Shadow DOM targets are nested lists of selectors (host -> descendant)
+            targets = ", ".join(
+                " >>> ".join(t) if isinstance(t, list) else t for t in node["target"]
+            )
             nodes_str += f"\n\n\t{num})\tTarget: {targets}"
             snippet = node.get("html").replace("\n", "")
             nodes_str += f"\n\t\tSnippet: {snippet}"
