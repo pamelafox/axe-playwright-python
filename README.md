@@ -16,7 +16,7 @@ and [Playwright](https://playwright.dev/python/docs/intro).
 
 ## Dependencies
 
-- Python >= 3.10
+- Python >= 3.11
 - [playwright](https://github.com/microsoft/playwright-python) >= 1.25.0
 
 ## Installation
