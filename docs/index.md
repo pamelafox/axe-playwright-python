@@ -7,7 +7,7 @@ and [Playwright](https://playwright.dev/python/docs/intro).
 
 You will need the following prerequisites in order to use this library:
 
-- Python >= 3.10
+- Python >= 3.11
 -  [playwright](https://github.com/microsoft/playwright-python) >= 1.25.0
 
 ## Installation
