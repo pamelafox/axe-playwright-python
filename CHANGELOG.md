@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.10] - November 23, 2026
+## [0.1.10] - November 25, 2026
 
 - Dropped support for Python 3.8, 3.9, and 3.10. The minimum supported Python version is now 3.11.
 - Upgraded axe-core JS version to v4.14.1. This patch release mostly removes false positives, but `meta-viewport-scale` now reports invalid `user-scalable` and `maximum-scale` values, and improved positioning of `absolute`/`fixed` elements may change `color-contrast` and `target-size` results.
